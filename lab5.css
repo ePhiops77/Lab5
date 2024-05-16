@@ -1,0 +1,248 @@
+.main{
+    background-color: rgb(247, 245, 245);
+    box-shadow: 2px 2px 10px black;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 1500px;
+    border-radius: 4em;
+    font-family: Calibri, Bold, sans-serif;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "aboutme datails";
+}
+
+#aboutme{
+    grid-area: aboutme;
+    background-color: rgb(233, 233, 233);
+    border-radius: 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#Photo{
+    margin-top: 5em;
+    border-radius: 4em;
+}
+
+#name{
+    font-size: 2.5em;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    color:#4a5770
+}
+
+.a{
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 1em;
+    background-color: #d3d3d3;
+    font-size: 1.5em;
+    line-height: 0;
+    color:#4a5770;
+}
+
+.socialmedia{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+#Telegram,#Instagram,#YouTube{
+    padding-right: 10px;
+    transition: transform 0.3s;
+}
+#Telegram:hover,#Instagram:hover,#YouTube:hover{
+    opacity:0.5;
+}
+
+.shirtinfo{
+    padding-bottom: 25px;
+    font-size: 1.5em;
+    line-height: 0;
+    color:#4a5770;
+}
+
+.shirtinfoone,.shirtinfotwo, .shirtinfothree,.shirtinfofour{
+display:flex;
+flex-direction: row;
+padding-bottom: 10px;
+}
+
+#calendar1,#place1,#phone1{
+    padding-right: 15px;
+    padding-top: 7px;
+}
+#email1{
+    padding-right: 15px;
+    padding-top: 11px;
+}
+
+.pp{
+    display:flex;
+    flex-direction: row; 
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+}
+#download{
+    padding-right: 10px;
+    padding-top: 19px;
+} 
+.resume{
+    font-size: 2em;
+    line-height: 0;
+    color:#d3d3d3;
+    background-color: rgb(74, 74, 218);
+    border-radius: 0.8em;
+    margin-bottom: 1em;
+
+}
+.resume:hover{
+    background-color: rgb(114, 114, 221);
+}
+
+
+
+#datails{
+    grid-area: datails;
+    border-radius: 4em;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5% 23% 1fr;
+
+}
+.navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 2em;
+    overflow: auto; 
+    margin-bottom: 0;
+}
+#nav1,#nav2,#nav3,#nav4{
+    padding-right: 3em;
+    font-size: 1.5em;
+    color:#6c7581;
+    background-color: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.5em;
+    padding: 10px 20px;
+    
+    margin: 0px;
+    margin-right: 40px;
+}
+#nav1{
+    background-color: rgb(74, 74, 218);
+    color: white;
+}
+#nav2:hover,#nav3:hover,#nav4:hover{
+    opacity:0.5;
+}
+.line-container {
+    width: 90px; /* Ширина контейнера */
+    height: 10px; /* Висота контейнера */
+    background-color: #f3f3f3; /* Колір фону контейнера */
+    border-radius: 10px; /* Закруглені кути контейнера */
+    overflow: hidden; /* Обрізати вміст, що виходить за межі контейнера */
+}
+.line {
+    height: 100%; /* Висота прогрес-бара дорівнює висоті контейнера */
+    background-color: blue; /* Колір прогрес-бара */
+    border-radius: 10px 0 0 10px; /* Закруглені кути зліва */
+    display: flex; /* Використовуємо flexbox для вирівнювання внутрішніх елементів */
+}
+.line .filled {
+    background-color: orange; /* Колір заповненої частини прогрес-бара */
+    width: 30%; /* Відсоток заповнення прогрес-бара */
+}
+.information {
+    padding-left: 2em;
+    padding-right: 2em;
+    
+    font-size: 1.5em;
+    color:#4a5770;
+}
+#info1{
+    font-size: 2em;
+    margin-bottom: 0.3em;
+    margin-top: 0.4em;
+}
+#maininfo{
+    margin-top: 0.5em;
+    margin-bottom: 0;
+}
+
+.info2{
+    margin-top: 0;
+    display: grid;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-top:3em;
+    font-size: 1.5em;
+    grid-gap: 0.5em 0.5em;
+    color:#4a5770;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2.5em 1fr 1fr;
+    grid-template-areas: 
+    "info2 info2"
+    "block1 block2"
+    "block3 block4";
+}
+#info2{
+    grid-area: info2;
+    font-size: 1.4em;
+    margin-top: 0.2em;
+    margin-bottom: 0;
+}
+#block1{
+    text-align: center;
+    grid-area: block1;
+    outline: 1px solid #d3d3d3;
+    border-radius: 2em;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+#block2{
+    text-align: center;
+    grid-area: block2;
+    outline: 1px solid #d3d3d3;
+    border-radius: 2em;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+}
+#block3{
+    text-align: center;
+    margin-bottom: 1em;
+    grid-area: block3;
+    outline: 1px solid #d3d3d3;
+    border-radius: 2em;
+    margin-right: 10px;
+}
+#block4{
+    text-align: center;
+    margin-bottom: 1em;
+    grid-area: block4;
+    outline: 1px solid #d3d3d3;
+    border-radius: 2em;
+}
+#design,#development,#apps,#photography{
+    padding-top: 1em;
+}
+#block11,#block21,#block31{
+    padding-top: 0;
+    margin-top: 0.3em;
+    font-size: 1.2em;
+}
+#block12,#block22,#block32,#block42{
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
